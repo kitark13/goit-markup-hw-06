@@ -66,7 +66,7 @@ img {
 }
 
 .logo-header {
-  padding: 24px 0;
+  padding: 16px 0;
   margin-right: 76px;
 }
 
@@ -75,7 +75,8 @@ img {
 }
 
 .header-list {
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   gap: 40px;
 }
@@ -108,6 +109,7 @@ img {
 
 .contacts {
   margin-left: auto;
+  display: none;
 }
 
 .contacts-list {
@@ -138,6 +140,134 @@ img {
 .address-item:focus,
 .nav-link.current {
   color: #404bbf;
+}
+
+.mob-menu {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 24px 24px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  padding: 0;
+}
+
+.menu-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(231, 233, 252, 0.1);
+  background-color: rgba(46, 47, 66, 0.1);
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.menu-close-icon {
+}
+.mob-menu-nav {
+}
+
+.mob-menu-list {
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-menu-link {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+
+  /* line-height: 40px; */
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mob-menu-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.current {
+}
+
+.mob-menu-contacts {
+}
+
+.mob-menu-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mob-menu-contacts-item {
+}
+
+.mob-menu-address-item {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+
+  /* line-height: 24px; */
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-menu-address-item:hover,
+.mob-menu-address-item:focus,
+.mob-menu-media-link:hover,
+.mob-menu-media-link:focus {
+  color: #404bbf;
+}
+
+.mob-menu-media-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mob-menu-media-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-menu-media-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob-menu-media-icon {
+  fill: #f4f4fd;
 }
 
 /* <!-----   HERO   -----> */
